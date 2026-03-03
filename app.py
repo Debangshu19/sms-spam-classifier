@@ -17,6 +17,11 @@ except:
     nltk.download('punkt', download_dir=nltk_data_path)
 
 try:
+    nltk.data.find('tokenizers/punkt_tab')
+except:
+    nltk.download('punkt_tab', download_dir=nltk_data_path)
+
+try:
     nltk.data.find('corpora/stopwords')
 except:
     nltk.download('stopwords', download_dir=nltk_data_path)
